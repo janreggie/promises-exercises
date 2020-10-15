@@ -22,7 +22,6 @@ Use [Promise.resolve(value)](https://developer.mozilla.org/en-US/docs/Web/JavaSc
 
 Use [Promise.reject(error)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject) to create a promise that will reject with the string "Boo!"
 
-
 ## Exercise 3
 
 You have the outline of a function `makePromiseWithConstructor(itShouldResolve)`
