@@ -50,8 +50,7 @@ function makePromiseWithConstructor(itShouldResolve){
 function makeDelayPromise(value, delayInMs){
   /* Return a promise that resolves with the value after delayInMs */
   return new Promise((resolve) => {
-    let p = new Promise((resolve) => setTimeout(resolve, delayInMs))
-    p.then(() => resolve(value))
+    setTimeout(() => resolve(value), delayInMs)
   })
 }
 

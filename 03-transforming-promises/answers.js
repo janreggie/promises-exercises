@@ -14,7 +14,7 @@ function mapPromise(promise, transformer){
       } catch (error) {
         reject(error)
       }
-    }).catch(reason => reject(reason))
+    }, reason => reject(reason))
   });
 }
 
@@ -53,7 +53,7 @@ function squarePromiseOrZero(promise){
  * @returns {Promise}
  */
 function switcheroo(promise){
-  return promise.then((reject) => {throw(reject)}, (reason) => reason);
+  return promise.then((result) => {throw(result)}, (reason) => reason);
 }
 
 /**
